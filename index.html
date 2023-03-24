@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Handson</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <!-- 1.Write the code to access element which is having id as "text"? -->
+    <div id="text">hi</div>
+<hr>
+    <!-- 2.Write the code to access element which is having tag as "h1" -->
+    <h1>heading</h1>
+<hr>
+    <!-- 3.Write the code to access element which is having class as "box" -->
+    <div class="box">box</div>
+<hr>
+    <!-- "<h1>Hello </h1> -->
+    <!-- 4.Change the heading from ""Hello"" to ""Hello World"" using DOM functions" -->
+    <h1>Hello</h1>
+    <button onclick="txxt()">Replace Text</button><br><br>
+<hr>
+    <!-- 5.Create an HTML page having content as Hello world and a button named Replace Text. 
+        When user will click on this button page content should be changed to "Welcome to Elevation academy" -->
+    <h2 id="txt">Hello World</h2>
+    <button onclick="Rplce()">Replace Text</button><br><br>
+<hr>
+    <!-- "<h1>Hello </h1> -->
+    <!-- 6.Add one style attribute and give text color as red and id attribute and give the id value as ""heading""
+         in the above given h1 tag using DOM functions" -->
+    <h1 id="value">Hello</h1>
+    <button id="chnge">Replace Text</button><br><br>
+<hr>
+    <!-- 7.Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also
+         create button at the bottom named "Change Flex direction". When user clicks on this button,
+         the cards arrangement should be changed to vertical direction. -->
+    <div id="main">
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+    </div><br>
+    <button id="button">Change Flex Direction</button><br><br>
+<hr>
+    <!-- 8.What’s the difference between window vs document?  -->
+    <div><h2>Window</h2><p>
+        It represents the browser window in which you are seeing the content.<br>
+        The properties related to it are stored in the window object.<br>
+        It is loaded before the document because of the window container document.<br>
+        The window is the global element for all objects, functions, etc.,<br>
+        It is an object of the browser.<br>
+        We can access document object properties inside the window.<br>
+        Example: <strong>Window.document.title</strong> will return the title of the document.<br>
+        Logically:<pre>
+                  Window:{
+                    document:{properties}
+                  }</pre>    
+         <h2>Document</h2>
+        It represents the document loaded inside the window of browser.<br>
+        The properties related to it are stored in the document object.<br>
+        It is loaded after the loading window because the window contains a document.<br>
+        It is the root element of the document object model.<br>
+        It is an object of the window.<br>
+        We can not access windows objects properties inside the document.<br>
+        Example: <strong>document.title</strong> will return the title of the document.<br>
+        Logically:<pre>
+            document:{properties}</pre>
+    </p></div><br>
+<hr>
+    <!-- 9.Write code to implement timer clock using JS -- display HH:MM:SS -- 
+        the time should keep updating every second -->
+    <div style="color:purple" id="clock"></div>
+    <!-- <button onclick="clck()">Time</button><br><br> -->
+<hr>
+    <!-- 10.Guess Number between 1 to 100. -->
+
+    <a href="./index1.html">Guess the Number Correct</a>
+    <script src="./index.js"></script>
+</body>
+</html>
